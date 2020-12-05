@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="poly.persistance.mapper.IQuizMapper">
+	<insert id="insertQuiz" parameterType="QuizDTO">
+		INSERT INTO q_info
+		(
+			FK_USER_NO,
+			Q_PIC,
+			<!-- Q_CATEGORY,  -->
+			REG_ID,
+			CHG_ID,
+			REG_DT,
+			CHG_DT
+		)
+		VALUES
+		(
+			#{fk_user_no},
+			#{q_pic},
+			<!--#{q_category},-->
+			#{id},
+			#{id},
+			SYSDATE(),
+			SYSDATE()
+		)
+	</insert>
+</mapper>

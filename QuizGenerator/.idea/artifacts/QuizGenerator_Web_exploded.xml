@@ -1,0 +1,38 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="QuizGenerator:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/QuizGenerator_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="QuizGenerator/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="QuizGenerator" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="annotations-api" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/annotations-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/catalina-ant.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/catalina-ha.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/catalina-storeconfig.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/catalina-tribes.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/catalina.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/ecj-4.6.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/el-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/jasper-el.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/jasper.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/jaspic-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/jsp-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/servlet-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/tomcat-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/tomcat-coyote.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/tomcat-dbcp.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/tomcat-jdbc.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/tomcat-jni.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/tomcat-util-scan.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/tomcat-util.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/tomcat-websocket.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../../apache-tomcat-8.5.57/apache-tomcat-8.5.57/lib/websocket-api.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

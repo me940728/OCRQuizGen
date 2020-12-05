@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="poly.persistance.mapper.IUserMapper">
+	<!-- 회원가입 하기 -->
+	<insert id="insertMember" parameterType="UserDTO">
+		INSERT INTO USER_INFO(
+			USER_NO,
+			EMAIL,
+			PASSWORD,
+			USER_ID,
+			USER_NAME,
+			REG_ID,
+			CHD_ID
+		)
+		VALUES(
+			(SELECT NVL(MAX(U.USER_NO),0)+1 FROM USER_INFO U WHERE 1=1),
+			#{email},
+			#{password},
+			#{user_id},
+			#{user_name},
+			#{user_name},
+			#{user_name}
+		)
+	</insert>
+	<!-- 로그인 하기 -->
+	<select id="loginPost" resultType="UserDTO" parameterType="UserDTO">
+		SELECT
+			USER_NAME,
+			USER_NO
+		FROM
+			USER_INFO
+		WHERE
+			USER_ID = #{user_id} AND PASSWORD = #{password}
+	</select>
+</mapper>

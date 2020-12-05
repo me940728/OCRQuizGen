@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="poly.persistance.mapper.ICusQMapper">
+	<insert id="insertCusQ" parameterType="CusQDTO">
+		INSERT INTO cus_q_info
+		(
+			FK_USER_NO,
+			FK_Q_ID,
+			CQ_NUM,
+			CQ_ANS,
+			CQ_PIC,
+			REG_ID,
+			CHG_ID,
+			REG_DT,
+			CHG_DT
+		)
+		VAlUES	
+		(
+			#{fk_user_no},
+			#{fk_q_id},
+			(SELECT IFNULL(MAX(c.CQ_NUM),0)+1 FROM cus_q_info AS c WHERE c.FK_Q_ID = #{fk_q_id}),
+			#{cq_ans},
+			#{cq_pic},
+			#{id},
+			#{id},
+			SYSDATE(),
+			SYSDATE()
+		)
+	</insert>
+</mapper>
